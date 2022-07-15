@@ -14,6 +14,7 @@ class Solution:
     
     def ismirror(self, leftroot , rightroot):
         if leftroot and rightroot: #not None then check further
-            return leftroot.val == rightroot.val and self.ismirror(leftroot.left , rightroot.right) and self.ismirror(leftroot.right , rightroot.left)
+            return leftroot.val == rightroot.val and self.ismirror(leftroot.left , rightroot.right) and 
+        self.ismirror(leftroot.right , rightroot.left)
         
         return leftroot == rightroot
