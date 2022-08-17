@@ -55,4 +55,4 @@ class Solution:
                     while nums[left] == nums[left - 1] and left < right:
                         left += 1
         
-        return result
+        return result 
